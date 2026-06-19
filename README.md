@@ -1,4 +1,4 @@
-# 2️⃣ Calculadora de Partidas Rankeadas (Python)
+# Calculadora de Partidas Rankeadas (Python)
 
 Desafio de projeto prático desenvolvido como parte da formação na **DIO (Digital Innovation One)**. O objetivo principal é fixar conceitos fundamentais de programação através de uma aplicação lógica de saldo de vitórias e ranqueamento de níveis.
 
