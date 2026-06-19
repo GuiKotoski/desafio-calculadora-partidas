@@ -1,39 +1,50 @@
-# Calculadora de Partidas Rankeadas (Python)
+# Calculadora de Partidas Rankeadas
 
-Desafio de projeto prático desenvolvido como parte da formação na **DIO (Digital Innovation One)**. O objetivo principal é fixar conceitos fundamentais de programação através de uma aplicação lógica de saldo de vitórias e ranqueamento de níveis.
-
----
-
-## 🚀 O Desafio
-
-O objetivo é criar uma função que receba como parâmetro a quantidade de **vitórias** e **derrotas** de um jogador, calcule o seu saldo de partidas ganhas e determine o seu nível/rank com base na tabela fornecida.
-
-### Regras de Negócio (Níveis por Vitórias):
-*   Menor do que 10: **Ferro**
-*   Entre 11 e 20: **Bronze**
-*   Entre 21 e 50: **Prata**
-*   Entre 51 e 80: **Ouro**
-*   Entre 81 e 90: **Diamante**
-*   Entre 91 e 100: **Lendário**
-*   Maior ou igual a 101: **Imortal**
+Este projeto prático foi desenvolvido como parte do segundo desafio de código proposto pela **DIO (Digital Innovation One)**. O objetivo principal foi consolidar a lógica de programação através da criação de funções e manipulação de múltiplos retornos utilizando Python.
 
 ---
 
-## 🛠️ Tecnologias e Conceitos Utilizados
+## 💻 Sobre o Desafio
 
-Como desenvolvedor com bagagem em linguagens fortemente tipadas (como C# e Java), este projeto foi uma excelente oportunidade para explorar a sintaxe limpa e o dinamismo do **Python**.
+O script calcula o saldo de partidas rankeadas de um jogador com base no número de **vitórias** e **derrotas**. Através de uma função dedicada, o sistema subtrai as derrotas das vitórias e determina o elo correspondente do jogador, cobrindo da categoria *Ferro* até *Imortal*.
 
-No código, você encontrará a aplicação prática de:
-*   **Variáveis e Operadores:** Operações matemáticas simples para obter o saldo.
-*   **Funções:** Modularização do código com passagem de parâmetros e retornos múltiplos (recurso nativo do Python).
-*   **Estruturas de Decisão:** Uso de `if/elif/else` com *relações encadeadas* (ex: `11 <= vitorias <= 20`).
-*   **Laços de Repetição:** Utilização do loop `for` e desempacotamento de tuplas para testar múltiplos cenários de uma só vez.
+### Requisitos Técnicos Aplicados:
+* **Variáveis:** Armazenamento do saldo e classificação do jogador.
+* **Operadores:** Operações aritméticas para cálculo de saldo e operadores de comparação.
+* **Estruturas de Decisão:** Filtros condicionais (`if`, `elif`, `else`) para categorização dos níveis.
+* **Funções:** Criação de escopo isolado que recebe parâmetros e retorna múltiplos valores de forma nativa.
+* **Laços de Repetição:** Controle de fluxo para iteração e teste em lote de múltiplos cenários.
 
 ---
 
-## 📦 Como Executar o Projeto
+## ⚡ Diferencial Implementado
 
-1. Certifique-se de ter o Python instalado na sua máquina.
-2. Clone este repositório:
+Para demonstrar uma arquitetura de código limpa e eficiência em testes, o projeto foi estruturado utilizando o conceito de **Desempacotamento de Tuplas** (*Tuple Unzipping*) combinado a um laço de repetição `for`. 
+
+Em vez de testar um cenário por vez ou forçar inputs manuais repetitivos, o script varre uma lista contendo múltiplos perfis de teste pré-definidos (valores de vitórias e derrotas). Isso permite validar todas as regras de negócio da tabela de níveis em uma única execução automática, simulando testes unitários simples.
+
+---
+
+## 📊 Regras de Negócio (Tabela de Níveis)
+
+| Vitórias Mínimas | Vitórias Máximas | Nível Correspondente |
+| :--- | :--- | :--- |
+| Menor que 10 | — | **Ferro** |
+| 11 | 20 | **Bronze** |
+| 21 | 50 | **Prata** |
+| 51 | 80 | **Ouro** |
+| 81 | 90 | **Diamante** |
+| 91 | 100 | **Lendário** |
+| Maior ou igual a 101 | — | **Imortal** |
+
+*Nota: O saldo de partidas é calculado através da fórmula: `Vitórias - Derrotas`.*
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Certifique-se de possuir o **Python 3** instalado em seu ambiente.
+2. Clone este repositório ou baixe o arquivo correspondente.
+3. Abra o terminal no diretório do projeto e execute o comando:
 ```bash
-   git clone [https://github.com/GuiKotoski/desafio-calculadora-partidas.git](https://github.com/GuiKotoski/desafio-calculadora-partidas.git)
+python calculadora.py
